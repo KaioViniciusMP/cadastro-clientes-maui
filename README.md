@@ -6,8 +6,8 @@ O objetivo é implementar um cadastro de clientes utilizando **.NET MAUI 9** com
 ---
 
 ## 🖼️ Preview
-<img src="./AssetsReadme/ImgClientesCadastrados.png" alt="Print da aplicação" width="600"/>
-<img src="./AssetsReadme/ImgEdicaoCadastroCliente.png" alt="Print da aplicação" width="600"/>
+<img src="./MauiClientes/AssetsReadme/ImgClientesCadastrados.png" alt="Print da aplicação" width="600"/>
+<img src="./MauiClientes/AssetsReadme/ImgEdicaoCadastroCliente.png" alt="Print da aplicação" width="600"/>
 ---
 
 ## 🚀 Funcionalidades
