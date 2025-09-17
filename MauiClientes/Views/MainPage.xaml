@@ -6,15 +6,12 @@
     <StackLayout Padding="20">
         <Label Text="Clientes Cadastrados" FontSize="16" FontAttributes="Bold" Margin="0,0,0,20" />
 
-        <ListView ItemsSource="{Binding Customers}" 
-                  HasUnevenRows="True">
+        <ListView ItemsSource="{Binding Customers}" HasUnevenRows="True">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <Frame Padding="10" Margin="0,5" BorderColor="LightGray" CornerRadius="5">
+                        <Frame Padding="10" Margin="0,5"  CornerRadius="5">
                             <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-
-                                <!-- Info do cliente -->
                                 <StackLayout VerticalOptions="Center" HorizontalOptions="StartAndExpand">
                                     <Label Text="{Binding Name}" FontSize="16" FontAttributes="Bold"/>
                                     <Label Text="{Binding Lastname}" FontSize="14"/>
@@ -22,12 +19,10 @@
                                     <Label Text="{Binding Address}" FontSize="14"/>
                                 </StackLayout>
 
-                                <!-- Botões de ação -->
                                 <StackLayout Orientation="Horizontal" HorizontalOptions="End" Spacing="5">
-                                    <Button Text="Editar" Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=BindingContext.EditCommand}" CommandParameter="{Binding .}" />
-                                    <Button Text="Apagar" Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=BindingContext.DeleteCommand}" CommandParameter="{Binding .}" />
+                                    <Button Text="Editar" BackgroundColor="DodgerBlue" WidthRequest="150" HeightRequest="60" TextColor="White" Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=BindingContext.EditCommand}" CommandParameter="{Binding .}" />
+                                    <Button Text="Apagar" BackgroundColor="#F44336" WidthRequest="150" HeightRequest="60" TextColor="White" Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=BindingContext.DeleteCommand}" CommandParameter="{Binding .}" />
                                 </StackLayout>
-
                             </StackLayout>
                         </Frame>
                     </ViewCell>
@@ -35,6 +30,6 @@
             </ListView.ItemTemplate>
         </ListView>
 
-        <Button Text="Adicionar Cliente" Clicked="OnAddCustomerClicked"/>
+        <Button Text="Adicionar Cliente" Clicked="OnAddCustomerClicked" BackgroundColor="DodgerBlue" TextColor="White"/>
     </StackLayout>
 </ContentPage>

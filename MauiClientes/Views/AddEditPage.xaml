@@ -14,8 +14,8 @@
         <Entry Placeholder="Endereço" Text="{Binding customer.Address}" />
 
         <HorizontalStackLayout Spacing="10">
-            <Button Text="Salvar" Command="{Binding SaveCommand}" />
-            <Button Text="Cancelar" Command="{Binding CancelCommand}" />
+            <Button Text="Salvar" BackgroundColor="DodgerBlue" TextColor="White" Command="{Binding SaveCommand}" />
+            <Button Text="Cancelar" BackgroundColor="#F44336" TextColor="White" Command="{Binding CancelCommand}" />
         </HorizontalStackLayout>
     </VerticalStackLayout>
 </ContentPage>
