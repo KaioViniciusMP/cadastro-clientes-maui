@@ -34,8 +34,8 @@ namespace MauiClientes.ViewModels
                 {
                     Name = "Kaio",
                     Lastname = "Vinicius",
-                    Age = 25,
-                    Address = "Rua Exemplo, 123"
+                    Age = 19,
+                    Address = "Jandira - SP"
                 });
             }
         }
