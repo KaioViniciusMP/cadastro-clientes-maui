@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiClientes.Views.AddEditPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Cadastro de Cliente">
+
+    <VerticalStackLayout Padding="20" Spacing="10">
+        <Label Text="Atualização e Cadastro de um novo cliente" FontSize="16" FontAttributes="Bold" Margin="0,0,0,20" />
+        
+        <Entry Placeholder="Nome" Text="{Binding customer.Name}" />
+        <Entry Placeholder="Sobrenome" Text="{Binding customer.Lastname}" />
+        <Entry Placeholder="Idade" Keyboard="Numeric" Text="{Binding customer.Age}" />
+        <Entry Placeholder="Endereço" Text="{Binding customer.Address}" />
+
+        <HorizontalStackLayout Spacing="10">
+            <Button Text="Salvar" Command="{Binding SaveCommand}" />
+            <Button Text="Cancelar" Command="{Binding CancelCommand}" />
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>
